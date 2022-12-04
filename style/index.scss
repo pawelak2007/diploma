@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;600;700;900&display=swap');
+@import './vars';
+@import './mixin';
+
+* {
+    @include default;
+}
+
+@import './header';
+@import './banner';
+@import './features';
+@import './work';
+@import './our-team';
+@import './testimonials';
+@import './download';
+@import './footer';

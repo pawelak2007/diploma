@@ -1,0 +1,122 @@
+.download-container {
+    width: 1510px;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 1024px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 320px;
+    }
+
+    section {
+        width: $w1170;
+        @include flex_center;
+        flex-direction: column;
+        margin-top: 114px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            width: 984px;
+            margin-top: 77px;
+
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            width: 280px;
+            margin-top: 34px;
+        }
+
+        h3 {
+            height: 70px;
+            @include flex_center;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            text-transform: capitalize;
+            text-align: center;
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                height: 60px;
+                font-size: 24px;
+                line-height: 28px;
+
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                height: 80px;
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+        }
+
+        h5 {
+            height: 21px;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            margin-top: 5px;
+            text-transform: uppercase;
+            text-align: center;
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                height: 16px;
+                font-size: 14px;
+                line-height: 16px;
+                margin-top: 4px;
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                height: 30px;
+                font-size: 13px;
+                line-height: 15px;
+                margin-top: 3px;
+            }
+
+        }
+
+        button {
+            width: 369px;
+            height: 77px;
+            background: $bg_active;
+            border: none;
+            margin-bottom: 114px;
+            margin-top: 47.71px;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 28px;
+            text-transform: uppercase;
+            color: #fff;
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                width: 313px;
+                margin-bottom: 78px;
+                margin-top: 43px;
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                width: 278px;
+                margin-bottom: 45px;
+                margin-top: 13px;
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+            &:hover {
+                background: $bg_hover;
+                cursor: pointer;
+            }
+
+            &:active {
+                background: $bg_active;
+                box-shadow: 4px 4px 30px $bg_active;
+                cursor: pointer;
+
+            }
+        }
+    }
+}

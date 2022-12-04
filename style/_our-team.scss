@@ -1,0 +1,148 @@
+.our-team-container {
+    width: 1510px;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 1024px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 320px;
+    }
+
+    section {
+        width: $w1170;
+        height: 619px;
+        margin: 114px auto;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            width: 984px;
+            // @include flex_center ();
+            height: 520px;
+            margin: 72px auto;
+
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            width: 280px;
+            height: 2327px;
+            margin: 35px auto;
+            @include flex_center;
+            flex-direction: column;
+
+        }
+
+        article {
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                & img {
+                    width: 227px;
+                }
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                img {
+                    width: 280px;
+                    height: 227px;
+                    object-fit: cover;
+                }
+
+            }
+
+            .name {
+                width: 270px;
+                height: 30px;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28px;
+                margin-top: 30px;
+                text-transform: capitalize;
+
+                @media screen and (min-width: 768px) and (max-width: 1024px) {
+                    width: 227px;
+                    height: 25px;
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin-top: 25px;
+                }
+
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 280px;
+                    height: 25px;
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin-top: 25px;
+                }
+            }
+
+            .profession {
+                width: 270px;
+                height: 21px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                color: $bg_active;
+                margin-top: 5px;
+                margin-bottom: 18px;
+                text-transform: uppercase;
+
+
+                @media screen and (min-width: 768px) and (max-width: 1024px) {
+                    width: 227px;
+                    height: 16px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 22px;
+                }
+
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 280px;
+                    height: 16px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 38px;
+                }
+            }
+
+            .quote {
+                width: 270px;
+                height: 168px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                color: #6C7279;
+                margin-bottom: 38px;
+
+                @media screen and (min-width: 768px) and (max-width: 1024px) {
+                    width: 227px;
+                    height: 128px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 39px;
+                }
+
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 280px;
+                    height: 96px;
+                    font-size: 14px;
+                    line-height: 16px;
+                    margin-bottom: 55px;
+                }
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                .icon img {
+                    width: 32px;
+                }
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                .icon img {
+                    width: 40px;
+                    height: 40px;
+                    margin-bottom: 49px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+.features-container {
+    width: 1510px;
+    @include flex_center;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        width: 1024px;
+        @include flex_center;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 320px;
+    }
+
+    section {
+        width: $w1170;
+        height: 717px;
+        display: flex;
+        flex-wrap: wrap;
+        @include mauto;
+        margin-bottom: 133.57px;
+
+        @media screen and (min-width: 768px) and (max-width: 1024px) {
+            width: 984px;
+            height: 524px;
+            margin-bottom: 80px;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            width: 280.84px;
+            height: 1542px;
+            margin-bottom: 35px;
+            display: flex;
+            flex-direction: column;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        article {
+            width: 370px;
+            height: 305.43px;
+            @include flex_center;
+            flex-direction: column;
+
+            &:nth-of-type(1),
+            &:nth-of-type(4) {
+                margin-right: 31px;
+            }
+
+            &:nth-of-type(2),
+            &:nth-of-type(5) {
+                margin-right: 29px;
+            }
+
+            h4 {
+                height: 70px;
+                margin: 29px 0 20.43px;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 28px;
+                text-transform: uppercase;
+                @include flex_center ();
+
+                @media screen and (min-width: 768px) and (max-width: 1024px) {
+                    height: 60.55px;
+                    margin: 35px 0 4px;
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    height: 53.83px;
+                    margin: 25px 0 0;
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+
+            h5 {
+                height: 70px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                color: #6C7279;
+                text-align: center;
+                @include flex_center;
+
+                @media screen and (min-width: 768px) and (max-width: 1024px) {
+                    height: 64px;
+                    font-size: 14px;
+                    line-height: 16.44px;
+                }
+
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    height: 80px;
+                    font-size: 14px;
+                    line-height: 16.55px;
+                }
+            }
+
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
+                width: 314px;
+                height: 237px;
+                @include mauto;
+
+                img {
+                    width: 85px;
+                }
+
+                &:nth-of-type(1),
+                &:nth-of-type(2),
+                &:nth-of-type(4),
+                &:nth-of-type(5) {
+                    margin-right: 20px;
+                }
+            }
+
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                width: 271px;
+                height: 221px;
+                margin-top: 36px;
+
+                img {
+                    width: 75px;
+                }
+
+                &:nth-of-type(1),
+                &:nth-of-type(2),
+                &:nth-of-type(4),
+                &:nth-of-type(5) {
+                    margin-right: 0;
+                }
+
+            }
+
+        }
+    }
+}
